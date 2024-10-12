@@ -1,0 +1,11 @@
+//introduction
+//variable
+//datatype
+//control statement : 1 dession making 
+		      2 looping statement
+//function user define
+//recursion
+//callbyvalue call bye reference
+//arrya
+//string
+//structure union

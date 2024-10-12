@@ -1,0 +1,14 @@
+08/10/24
+
+//call bye value and call bye reference : is use to call the function.
+
+//Actual parameter : when a fun is called the valus that are calls 
+
+//Formal parameter : formal paramiter are local varialbe which are assign values from the arrguments, when tha 
+
+//call bye value : when we call a function by value it means that we are passing the values of the arrguments which are coped into the formal parameter of the function.
+* which means thats the the orignal values remains unchanged and only the parameters inside the function changes
+
+//call bye reference : the call by refarenace method are passing arrgument to tha function copies the address of the arrgument of actual parameneter 
+* address of actual argus are copied and then assign to the corrspoding formal; argument
+

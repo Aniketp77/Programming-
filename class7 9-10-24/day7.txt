@@ -1,0 +1,29 @@
+09/10/24
+
+//it can also store the deriver data types such as pointer and structure.
+
+//it is use to represent multiple data item of same types by using only single name 
+
+
+// string length : this function is use to shows the length of string.
+//string copy : function is use to copy one string to another.
+//string cat : this function is use u concadinate 2 given string.
+//stringcomp : used to compare to given string.
+//stringreverse : this function is use to show the revers of a string.
+//stringlover : this function is use to convert string into lover case
+//stringupper : this function is use to convert string into upper case
+//stringstring	: this fun is use to search substring within larger string
+
+
+//structure and union
+
+//structure : 
+
+10-10-24
+
+//pointer :
+	
+
+
+
+
