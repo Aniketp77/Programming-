@@ -1,0 +1,47 @@
+p{
+    color: red;
+    text-indent: 30px;
+    text-decoration:underline;
+    text-decoration-color: aquamarine;
+    text-decoration-style: wavy; */
+    text-transform: uppercase;
+    text-align: justify;
+
+}
+
+h1{
+    text-shadow: 5px 10px 2px blue;
+    text-align: center;
+}
+
+pre{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-variant: small-caps;
+
+}
+
+h2{
+    background-color: aqua;
+    
+}
+
+/* body{
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png);
+} */
+
+section{
+
+    background-image: url(https://media.istockphoto.com/id/537061205/vector/abstract-background.jpg?s=612x612&w=is&k=20&c=xVBJnkbghTwUEIGrNPssfV77KS7QDWIum41Aqmw1KsU=);
+
+    height : 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+    background-size: cover;
+
+}

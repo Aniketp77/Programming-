@@ -1,0 +1,580 @@
+											Day 1	14/10
+introduction
+											Day 2	15/10
+installation
+
+
+											Day 3	16/10
+
+//CREATE DATABASE 
+	SYNTAX
+create database database_name;
+
+//CREATE TABLE
+	SYNTAX
+create table table_name(
+	column_name1 datatype(size);
+	column_name2 datatype(size);
+	column_name3 datatype(size);
+	column_name4 datatype(size);
+);
+
+//INSERT :
+
+#insert into institution values(111,'mmec','cs',10),(112,'jce','me',11),(113,'jain_clg','ec',12),(114,'sgbit','civil',13);
+
+#select * from institution;
+
+select * from institution;
+
+
+
+
+											Day 4	17/10
+//ALTER ADD COLUMN 
+
+	#add 1 column of gread in student table 
+	#alter add column is use to add column to existing table 
+*syntax 
+	alter table table name 
+	column defination datyapyte(size)
+
+*EXAMPLE: 
+
+	select * from student ;
+
+	alter table student 
+	add column gread int(20);
+
+//ALTER DROP table 
+
+	alter drop table is use for deleting column from table 
+
+	alter table table name drop column column name 
+	alter table student drop marks ;
+
+
+
+//UPDATE 
+	update table is use to change the values of the table and the value of 
+*SYNTAX
+	update  table_name 
+	set column name= value;
+
+	* for updating particular row syntax is 
+
+	update table_name 
+	set column_name = vales 
+	where condition
+
+*EXAMPLE
+	select * from student;
+
+	update student 
+	set marks = 20
+	where name = 'vishal' ;
+
+select * from student;
+
+
+
+											Day 5	18/10
+
+// ALTER MODIFY TABLE
+
+*SYNTAX
+	alter table table_name modify column column_name column_type.
+
+*EXAMPLE
+	alter table student 
+  	MODIFY 'marks' int(10);
+
+//ALTER RENAME TABLE
+
+*SYNTAX
+	alter table table_name rename old_column_name to new_column_name column ; THIS REMOVED
+OR
+
+	alter table table_name change old_column_name new_column_name column definatiom
+
+*EXAMPLE
+
+	#ALTER TABLE STUDENT column MARKS to Marks_Student;
+OR
+	select *from student;
+	ALTER TABLE STUDENT 
+	change marks Student_marks int(20);
+	select * from student;
+
+
+//SELECT 
+it is used for retriving record for database
+
+//WHERE CLAUSES : it is used for to extract specific records;
+
+//GROUP BY :
+
+//HAVING :
+
+//OLDER BY done
+
+//FROM
+SELECT *FROM TABLE_NAME;
+or
+SELECT COLUMN_NAME,COLUMN_NAME FROM YABLE_NAME;
+example
+select name,student_marks from student;
+
+//SELECT UNIQUE OR SELECT DISTINCT
+	 
+	EXAMPLE
+select DISTINCT student_marks from student;
+
+
+AGGREGATE FUNCTION IN SQL
+
+1.COUNT() : it will count the row in the table.
+	syntax:
+* select count(column_name)from table_name;
+* select count(*) from student_info
+	Example:
+select count(name) from student;
+
+2.sum() : sum of numeric column.
+	syntax:
+select sum(column_name) fron table_name;
+	Example
+select sum(name) from student;
+
+3.max() :
+	syntax:
+select max(column_name) fron table_name;
+	Example
+select max(name) from student;
+
+4.min() :
+	syntax:
+select min(column_name) fron table_name;
+	Example
+select min(name) from student;
+
+5.AVG() : is use to calculate number row any column count
+	syntax:
+select avg(column_name) fron table_name;
+	Example
+select avg(name) from student;
+
+											Day 6	19/10
+
+select count :
+	null value will not be counted.
+
+//select count(distinct column_name) from table_name;
+
+
+//select as: is used to assign temporarily a new name to a table column.
+	SYNTAX:
+select column_name as temp_name from table_name;
+
+//select top count:
+	SYNTAX:
+select * from table_name limit 3;
+
+//select IN : reduce the need to use multiple sql "or" condition. 
+* retriving the value of particular record.
+	SYNTAX:
+select * from table_name where col_name in ('values1',value2);
+
+select sum:
+	SYNTAX:
+select sum(column name) as "temp_name" from table_name;
+	EXAMPLE  :
+select sum(marks) as 'total_marks' from student_info;
+
+//select null: null values are used to reprent missing unknow data
+conditions 
+1.is null: select record with null values.
+	SYNTAX:
+select column _name from table_name where column_name is null;
+	EXAMPLE:
+select roll_no from student_info where grade is null;
+
+2.is not null : select record without null values.
+	SYNTAX:
+select column _name from table_name where column_name is not null;
+	EXAMPLE:
+select count(roll_no) from student_info where grade is not null;
+
+
+clauses 
+1.where : and condition is used in sql query to create two or more condition to be met
+
+	
+
+2.and :
+EXAMPLE:
+#INSERT INTO student_info values(1,'aniket@123',9,'b');
+
+select * 
+from student_info 
+where roll_no =1 and email = 'aniket@123';
+select * from student_info;
+
+3.or : 
+#INSERT INTO student_info values(1,'aniket@123',9,'b');
+select *from student_info where roll_no =1 OR email = 'aniket@123';
+select * from student_info;
+
+
+											Day 7	21/10
+OLDER BY 
+1.ASC : 
+	SYNTAX
+select * from  table_name order by column_name asc;
+	EXAMPLLE:
+
+
+2.DESC :
+	SYNTAX
+select * from  table_name order by column_name asc;
+	EXAMPLLE:
+select * 
+from institution
+order by clg_id desc;
+
+3.RANDOM :
+
+
+4.
+
+// JOINS 
+
+1.INNER : 2 comman no of column 
+*record that have matching with both table 
+	SYNTAX :
+	EXAMPLE :
+1.select * from institution inner join institution1 on institution.clg_id = institution1.clg_id;
+
+2.SELECT institution.clg_id, institution.clg_name,institution1.clg_id FROM `institution` INNER join institution1 ON
+institution.clg_id = institution1.clg_id;
+
+2.LEFT JOIN  : 
+	SYNTAX :
+SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.column_name = table2.column_name;
+
+	EXAMPLE :
+
+3.RIGHT JOIN : 
+
+//UNION
+select * from institution 
+UNION
+select * from institution1 ;
+
+
+4.FULL OUTER JOIN
+5.CROSS JOIN
+
+
+											Day 8	22/10
+//KEYS
+
+1.PRIMARY KEY : that uniquely identify each row in the table 
+* a primary key connot have null value
+	SYNTAX:
+create table table_name(
+column_name1 datatype(size),
+PRIMARY KEY (COLUMN_NAME1,COLUMN_NAME2)
+);
+
+	EXAMPLE :
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    PRIMARY KEY (ID)
+);
+
+* add primary key in exixting table 
+
+ALTER TABLE institution
+ADD PRIMARY KEY (clg_id);
+
+*delete primary key
+
+ALTER TABLE institution
+drop PRIMARY KEY (clg_id);
+
+2.COMPOSITE :
+* a primary key that made by the combination of more then one attribute known as a composite key.
+
+create table table_name(column_name1 datatype(size),column_name2 datatype(size), primary key (column_name1,column_name2));
+
+3.UNIQUE KRY :
+
+
+4.FOREIGN KEY : use for connecting two tables
+
+cannot add directly in child 
+*one primary key in both table 
+
+error
+INSERT into stu_edu_info VALUES(4,'adarsh','bcd');
+
+#1452 - Cannot add or update a child row: a foreign key constraint fails (`student`.`stu_edu_info`, CONSTRAINT `stu_edu_info_ibfk_1` FOREIGN KEY (`id`) REFERENCES `stu_personal_info` (`id`))
+
+ALTERNATE KEY
+
+
+											Day 9	23/10
+
+TASK_1
+1.SELECT * from institution 
+order by clg_id ASC;
+
+2.SELECT * from institution 
+order by clg_branch desc;
+
+3.
+
+4.insert into institution values(1106,'sgbit','java',60);
+insert into institution values(1107,'jain','core',50);
+
+5.UPDATE institution Set clg_branch = 1105
+where clg_name ='jain' and clg_branch='core';
+
+6.delete from institution where staff =null;
+
+7.create table subject(
+    sub_id int(10),
+    sub_name varchar(20),
+    sub_session varchar(10),
+    PRIMARY KEY(sub_id)
+    );
+    
+    INSERT into subject values (1,'c','morning');
+    INSERT into subject VALUES (2,'c','evning');
+    INSERT into subject VALUES(3,'c','morning');
+    INSERT into subject VALUES(4,'c','night');
+8.
+
+class starts
+
+TASK_2
+create table stu_personal_info (
+    id int (10),
+    name varchar (20),
+    age int (20),
+    PRIMARY KEY(id)
+    );
+    
+    insert into stu_personal_info VALUES(1,'aniket',24);
+     insert into stu_personal_info VALUES(2,'vishal',22);
+      insert into stu_personal_info VALUES(3,'sai',26);
+      
+     select * from stu_personal_into;
+
+//LIKE:
+//BETWEEN :
+
+
+											Day 10	24/10
+//SQL STATMENT 
+*DDL:
+*DML:
+*DQL:
+
+//PLSQL
+
+*PROCEDURE LANGUAGE : IS FUNCTION BUT NOT RETURN THE VALUE.
+
+*return  : returns the datatype.
+*returns: return the value.
+
+PGM_1
+
+DELIMITER //
+
+CREATE FUNCTION SQUARE(NUM INT)
+RETURNS INT;
+
+BEGIN
+DECLARE RESULT INT ;
+SET RESULT=0;
+SET RESULT=NUM*NUM;
+RETURN RESULT;
+END //
+DELIMITER ;
+
+
+HOME WORK
+
+AREA OF CIRCLE 
+AREA OF TRANGLE
+
+
+PGM_2
+
+
+DELIMITER //
+ CREATE FUNCTION CHECK_IF_ELSE(VAL INT)
+ RETURNS VARCHAR(20)
+ 
+BEGIN
+DECLARE A VARCHAR(20);
+IF VAL = 10 THEN
+	SET A ='VALUE IS 10';
+ELSEIF VAL = 20 THEN
+	SET A = 'VALUE IS 20';
+ELSE 
+	SET A ='VALUE IS INCURRECT';
+END IF;
+RETURN A;
+
+END //
+DELIMITER ;
+
+SELECT CHECK_IF_ELSE(10);
+
+CREATE FUN TO CHECK WETHER THE USER IS ELIGIBLE FOR VOTIN OR NOT
+
+
+//WAY TO PASS PARAMETER
+
+*IN 
+*OUT
+
+// INSERT
+
+DELIMITER //
+CREATE PROCEDURE INSERT_USER
+(IN P_ID INT (10),
+ IN P_NAME VARCHAR(100))
+BEGIN
+	INSERT INTO user_reg(CLG_ID,clg_name)VALUES(P_ID,P_NAME);
+END //
+DELIMITER ;
+ 
+//QUERY
+
+CALL INSERT_USER(3,'SGBIT');
+SELECT * FROM `user_reg` ;
+
+//UPDATE PROGRAM
+
+DELIMITER //
+CREATE PROCEDURE UPDATE_USER
+(IN P_ID INT (10),
+ IN P_NAME VARCHAR(100))
+BEGIN
+	UPDATE user_reg 
+    SET clg_name = P_NAME 
+    WHERE clg_id = P_ID;
+	#INSERT INTO user_reg(CLG_ID,clg_name)VALUES(P_ID,P_NAME);
+END //
+DELIMITER ;
+
+//QUERY
+
+SELECT * FROM `user_reg` ;
+CALL UPDATE_USER(3,'KLE');
+SELECT * FROM `user_reg` ;
+
+//DELETE
+
+DELIMITER //
+CREATE PROCEDURE DELETE_USER
+(IN P_ID INT (10))
+BEGIN
+	DELETE FROM user_reg 
+    WHERE clg_id = P_ID;
+	#INSERT INTO user_reg(CLG_ID,clg_name)VALUES(P_ID,P_NAME);
+END //
+DELIMITER ;
+
+//QUERY
+SELECT * FROM user_reg;
+CALL DELETE_USER(3);
+SELECT * FROM user_reg;
+
+
+											Day 11	25/10
+
+//TRIGGAR
+
+PROGRAM :
+
+DELIMITER //
+TRIGGER
+(IN P_ID INT (10))
+BEGIN
+	
+   UPDATE EMPLOYEE 
+   SET SALARY_STATUS='CREATED';
+END //
+DELIMITER ;
+
+
+SELECT * FROM money;
+SELECT * FROM EMPLOYEE;
+
+INSERT INTO MONEY VALUES(5000);
+
+SELECT * FROM money;
+SELECT * FROM EMPLOYEE;
+
+EXAMPLE 2 :
+
+INSERT INTO EMPLOYEE VALUES (2,'NOT CREATED');
+SELECT * FROM money;
+SELECT * FROM EMPLOYEE;
+
+INSERT INTO MONEY VALUES(8000);
+
+SELECT * FROM money;
+SELECT * FROM EMPLOYEE;
+
+
+//ADMISSION TRIGGER
+
+
+CREATE TABLE ENROLL_STU_LIST(
+    ID INT(20),
+    NAME VARCHAR(20),
+    CITY VARCHAR(10)
+    );
+    
+CREATE TABLE ADMISSION(
+   
+    ADMISSION_STATUS VARCHAR(10)
+    );
+    
+DELIMITER //
+CREATE TRIGGER STATUS AFTER INSERT ON ENROLL_STU_LIST
+FOR EACH ROW
+
+BEGIN
+	
+    INSERT INTO ADDMISSION VALUES('DONE');
+  # UPDATE ADMISSION
+   #SET ADMISSION_STATUS='DONE';
+END //
+DELIMITER ;
+
+
+											Day 12	28/10
+
+//SQL INDEX 
+
+
+//primarya index
+//unique index
+//fulltext index
+//spartial index
+
+
+

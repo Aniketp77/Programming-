@@ -1,0 +1,15 @@
+p{
+    border: 2px solid blue;
+    border-top-right-radius: 100px ;
+    border-bottom-left-radius: 100px;
+    border-style: dotted;
+    
+}
+
+img{
+    border: 2px solid red;
+    border-radius: 150px 50px 50px 100px ;
+    float: right;
+}
+
+

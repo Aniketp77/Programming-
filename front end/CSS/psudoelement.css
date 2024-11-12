@@ -1,0 +1,32 @@
+.ap::first-letter{
+    background-color: red;
+    font-size: 3rem;
+}
+
+p::first-line{
+    background-color: burlywood;
+}
+
+::selection{
+    color: red;
+    background-color:aquamarine;
+}
+
+h3::before{
+    
+    content: 'aniket';
+}
+
+h3::after{
+    content: 'paradeshi';
+}
+
+.a::after{
+    content: '*';
+    color: red;
+}
+
+.a::before{
+    content: '1]';
+    color: red;
+}

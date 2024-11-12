@@ -1,0 +1,41 @@
+HOME WORK 1ST
+
+#create database Academic_record;
+
+create table student_info(
+	roll_no int(10),
+    email varchar(20),
+    marks int(10),
+    grade varchar(10)
+);
+
+select * from student_info;
+
+insert into student_info values(1,'aniket@123',9,'b');
+insert into student_info values(2,'vishal@123',8,'p');
+insert into student_info values(3,'saikumar@123',9,'o');
+insert into student_info values(4,'omakr@123',5,'l');
+insert into student_info values(5,'vaishnavi@123',6,'w');
+insert into student_info values(6,'arya@123',8,'j');
+insert into student_info values(7,'rohit@123',9,'f');
+insert into student_info values(8,'adarsh@123',4,'h');
+insert into student_info values(9,'prashant@123',6,'t');
+insert into student_info values(10,'dhiraj@123',9,'a');
+insert into student_info values(11,'gajanan@123',7,'e');
+
+select * from student_info;
+
+select count(marks) from student_info;
+select * from student_info;
+
+select sum(marks) from student_info;
+select * from student_info;
+
+select max(marks) from student_info;
+select * from student_info;
+
+select min(marks) from student_info;
+select * from student_info;
+
+select avg(marks) from student_info;
+select * from student_info;

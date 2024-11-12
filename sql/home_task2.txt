@@ -1,0 +1,56 @@
+//task2
+
+create table institution (
+	clg_id int(10),
+	clg_name varchar(20),
+    clg_branch varchar(20),
+    staff int (10));
+
+select * from institution;
+
+insert into institution values(1101,'aniket','it',20);
+insert into institution values(1102,'omkar','cse',15);
+insert into institution values(1103,'vishal',null,10);
+insert into institution values(1104,'pramod','mgt',30);
+insert into institution values(1105,'adarsh','acc',null);
+
+select * from institution;
+
+1. alter table institution 
+add no_of_classrooms int(10);
+
+select * from institution;
+
+2. alter table institution 
+change staff no_of_faculty int(10);
+
+select * from institution;
+
+3.alter table institution 
+MODIFY column clg_id varchar(10);
+
+select * from institution;
+
+4.alter table institution 
+drop column no_of_classrooms;
+
+select * from institution;
+
+5.alter table institution 
+change no_of_faculty staff int(10);
+
+6.select DISTINCT staff from institution;
+
+7.select sum(staff) from institution;
+
+8.select  clg_branch from institution where clg_branch is null;
+
+9.select * from institution;
+select clg_id 
+from institution
+where clg_name = 'vishal' and clg_name = 'aniket';
+
+10. select * from institution;
+select clg_branch 
+from institution
+where clg_id = '1101' or staff = '20';

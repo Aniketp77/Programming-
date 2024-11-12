@@ -1,0 +1,26 @@
+
+shos rel
+
+/* Descendant combinator (space) : target both direct and indirect child */ 
+
+/* div p {
+    background-color: yellow;
+  } */
+
+  /* Child combinator (>) : */
+
+  /* div > p {
+    background-color: yellow;
+  } */
+
+  /* Next sibling combinator (+) : displsy the first siblings */
+
+  /* div + p {
+    background-color: yellow;
+  } */
+
+  /* genaral-sibling combinator (~) : display all siblings */
+  
+  div ~ p {
+    background-color: yellow;
+  }

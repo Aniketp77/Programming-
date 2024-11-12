@@ -1,0 +1,16 @@
+#ap{
+    color: aqua;
+}
+.a{
+    color: pink;
+}
+h1{
+    color: blueviolet;
+}
+
+#ap,.a,h1{
+    background-color: blanchedalmond;
+}
+*{
+    font-style: italic;
+}

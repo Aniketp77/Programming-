@@ -1,0 +1,129 @@
+CSS
+								Day 1	10/11
+css : flow of execution, style design, html doc
+	* use to design html doc 
+	*
+// 3 types of css 
+1.inline css:
+2.internal css :
+3.exaternal css :
+
+
+// selectors : 
+	There are 4 types of selectors:
+1.simple :
+	*which helps to target html to direct children
+//There are 5 types:
+	1.id :
+		* which helps to target specific element.
+		* use it # for calling.
+	2.class:
+		* the class we can use multiple time to give effect.
+		* extention is .
+	3.element or tagname :
+		*is use to target html element by using tag name.
+	4.group :
+		*is use to target html element by the help of id, class and tag name,
+		* we use to take help of comma(,) for grouping.  
+	5.univarse :
+		*target hole html document.
+
+2.combinator  :
+//There are 5 types:
+	1.Descendant combinator (space)
+	2.Child combinator (>)
+	3.Next sibling combinator (+)
+	4.genaral-sibling combinator (~)
+3.pseudo class :
+	1.link:
+		1.visited:
+		2.unvisited:
+		3.active:
+
+	2.first child :
+
+	3.last child :
+	4.fisrt of type :
+	5.last of type :
+	6.nth of clild :
+	7.hover : 
+
+4.pseudo element :
+	1.::first-letter
+	2.::first-line
+	3.::before
+	4.::before
+
+								Day 2	11/11
+
+
+//TEXT PROPERTY 
+	1.color : 
+	2.text-align :
+	3.text-decoration :
+	4.text-decoration-style
+	5.text-decoration-color
+	6.text-transform :
+	7.text-shodow
+	8.text-indent
+
+
+//FONT PROPERTY
+	font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-variant: small-caps;	
+
+
+//BACKGROUNT PROPERTY
+	background-image: url();
+	height : 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+	
+//
+	vh
+	%
+	px
+	rem
+
+//SEMANTIC TAGS
+ there are 11 types of semantic tags
+
+	1.H-header
+	2.D-div
+	3.A-article
+	4.M-MAIN
+	5.N-NAV
+	6.S-section
+	7.T-TIME
+	8.A-aside
+	9.F-figure
+	10.F-figcaption
+	11.F-footer
+
+//CSS BOX MODEL 
+
+1.padding : top,right,bottom,left.
+2.border : top,right,bottom,left.
+3.margin : top,right,bottom,left.
+
+
+
+//CSS FLOT : push element right or left
+
+//BOX SHODOW
+
+								Day 3	11/11
+
+//border :
+
+1.border: 2px solid red;
+2.border-radius: 150px 50px 50px 100px ;
+
+//css important:
+	!important
