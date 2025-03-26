@@ -1,0 +1,835 @@
+upcasting-and-downcasting-in-java.
+
+LTS: longterm support.
+
+								Day 1	25/11
+//introduction:
+//History of java :
+	developed in 1995 by games Dosling, Mike, Petrik first version of java released in 1995.
+//installation :
+//features:
+	1.simple programming language.
+	2.platform independent : we can run java file any operating system.
+	3.oop's :object oriented programing structure.
+	4.interpreted 
+	5.robest
+	6.secure
+	7.multithreding
+
+								Day 2	26/11
+
+
+//public static void main(string args[])
+
+*public : public is a accesses specifier.
+*static : static is a keyword.
+*void : void is return type.
+*main : main is entry point of a program.
+*command line argument:
+
+//Data types: that declares which type of data we are going to store in variable.
+
+primitive: java is provide 8 type of primitive data types.
+Numeric type:
+*.integer: 
+1.byte, 
+2.short, 
+3.int, 
+4.long.
+*.floting point :5.float, 6.double.
+non numeric type :
+7.Boolean
+8.Char
+
+non primitive: 
+1.String
+2.Array
+
+//variable : varialbe is a name of storage location.
+
+//Oprators : oprator is symbol wchich perform some opration.
+
+								Day 3	27/11
+
+
+//loops : 
+*control statement 
+1.dision making
+	if-else:
+	elseif :
+	else-if ladder : multiple else if statement.
+2.ittrate:
+	for 
+	while
+	do while
+								Day 4	28/11
+ittration: explanation 
+
+//.ittrate:
+	for : we know the destination. then we use for loop.
+	while : we dont know the destination.
+	do while : same as the while loop. but first we print the statement.
+//user input.
+
+
+								Day 5	29/11
+//array : 
+	 array is the collection of same type of data(homogenius).
+*array has fixed sized we canot increse or decrise value at run time.
+*we can access that data using index no.
+
+//advantages:
+1.code  optimization.
+2.random accsess
+3.easy to search.
+4.easy to sort.
+
+//disadvantage.
+1.memory waste.
+2.difficult to perform insertion and deletion opration.
+3.fixed size.
+
+
+								Day 6	02/12
+// dicuss types of array.
+1.one dimentional and explaination
+2.two dimentional.
+3.multi dimentioonal.
+
+//.two dimentional and multi dimentional with explaination
+
+
+								Day 7	03/12
+// intro SCP What is scp
+								Day 8	04/12
+
+// string : string is a collection of group of charector.
+two ways to declare string 
+	1.string litterals
+	2.by object with object.
+//string : == vs .equals
+
+//Sting methods;
+
+1.length() : 
+2.CharAt() :
+3.indexOf() :
+4.isEmpty() :
+5.replace('','') :
+6.toUpperCase() :
+7.toLowercase() :
+8.equalsIgnoreCase() :
+9.concat() ;
+10.subString() :
+11.trim() :
+
+//StingBuilder methods: equals methond not overring from object class.
+1.capacity:
+2.append() :
+3.reverse() ;
+4.deleteCharAt(3) :
+5.
+
+
+								Day 9	05/12
+String jdk 1.1.
+
+//types of string : 
+
+1.string : 
+// difference : immutable, more storage, non-synchronized, fast but threads are not safe, concate().
+there is two ways 
+	1.by string litters
+	2.by object
+2.stringbuilder : 
+//difference : mutable, less storage, non-synchronized, fast but threads are not safe, append().
+
+3.stringbuffer : 
+//difference : mutable, less storage, synchronized, slow but threads are safe, append().
+
+*difference between all of above 
+
+
+
+
+
+
+
+								Day 10	9/12
+
+//oop's : object oriented programing system. it is the way to maintain our pgm which is use for to create real word entites.
+	: real word entities : 
+
+*object inialized object by using new keyword.
+				
+java is a partially oops, not a 100% 
+
+4 pillers of java: object and class.
+	1.inharitance.
+	2.abstraction.
+	3.polymophion.
+	4.encapsulation.
+
+
+*class :  class is a collection of objects.
+	*class is not a real word entitie.
+	*class is logical entity only.
+	*class does not occupay any memory.
+*object :
+	*object is a instance of class.
+	*object is real-word entities.
+	*object is a physical entity only.
+	*object occupay the memory.
+
+								Day 11	10/12
+//constructor rule: it automatically calls when object get created.
+
+*constructor is same like a method is same as its class name.
+*there is no explicit return type.
+*constructor automatically call when obj get created.
+
+//adav:
+1.to initlized the object.
+
+//type of constructor ;
+1.default : created by user.
+2.default : created by compailer.
+3.parameter : passing the values from the parameter
+4.copy : copy the constructor from one obj to another object
+
+//there is no copy constractor concept in java.
+
+								Day 12	11/12
+
+//inheritance : override the data from super class. using extends keyword. 
+*is a relationship. parent and child relationship.
+*child class access the properties and behavior or state from the parent class as well as current class.
+
+*blood relationship.
+
+note:
+
+Parent=Child class
+Base=derived class
+Super=sub class
+
+//advantage:
+* for code reusability.
+
+//dis
+*tight coupled.
+
+//different type of inheritance.
+
+
+1.single inheritance : 
+2.multilevel inheritance : there is chine
+3.multiple inheritance : multiple parents but single child.
+4.hirachical inheritance : one parent but multiple child..
+5.hybrid inheritance : combination of any two types of inheritance.
+
+task
+1.company
+2.hospital
+3.dmart
+4.collage
+5.country
+
+								Day 13	12/12
+
+//multiple inheritance.
+
+//abstraction :
+
+//interface : 
+*it give 100% abstraction.
+*we can achive multiple inheritance.
+*abstraction its hides internal info and shown only essensial info.
+
+*method : we declared method within interface it contain only abstract method, not method body.
+
+*defauld method : public + abstract.
+*default variable : public static final. 
+
+*its complete the implimentation of that method which is declared in interface.
+
+java 
+jdk 8:default method body
+jdk 8:static 
+jdk 9:private method.
+
+*if interface interface then extends
+
+								Day 14	13/12
+//access modifires / specifier
+field,methods : access level scope.
+*access modifier means
+*accessability of scop variable, method.
+
+		outside-class	inside-class	child-access	outside-package
+public :	    yes		    yes		    yes		      yes
+private :	    no		    yes		    no		      no
+protected :	   yes		    yes		    yes		    no/yes
+default :	   yes		    yes		    yes		      no
+
+
+public: accesible everywhere 
+private : accesible within a class only.
+protected : accesible outside class but child class only.
+default : accesible with a same package only.
+
+//keywords :
+
+1.this. : 
+
+1.variable : this variable refers to the current class instance variable.
+	    confusion b/w parameter name and instance variable.so that time we use this keyword.
+2.method : compiler automatically set this keyword while calling the method.
+
+3.constractor : it reuse the one constractor to another.
+
+								Day 15	16/12
+
+//Static keyword : is used for memory management.
+
+note : * not possible to declare static keyword with the local variable.
+it is possible only with the instance variable.
+
+*it is only class lavel data.
+
+
+1.local variable : which variable declares inside the method or constractor. 
+2.instance variable : which variables are declare within the classs only .
+
+	
+*with variable : static will give common property to every objects.
+
+*with method : to initialized the static variable.
+
+*static block : static block execute before main method calls.
+
+
+note : 
+1.static variable exactly where occupies the memory?
+ans : class area, or method area. 	
+
+2.by class name we can easily access that data outside class.
+
+
+								Day 16	17/12 keyword
+
+//super : only in inheritance.
+
+there is 3 ways to apply super keyword.
+
+1.super variable : if parent class and child class have same fields.
+		  confusion betw parent class data and child class data.
+
+2.super method : if parent class and child class have same method that time use super keyword.
+
+3.super constractor : its invoke the parent class constractor.(automaticllya add super keyword)
+
+//final : 
+
+
+final variable : it going act like a constant variable.
+
+final method :if we not able overring the property from the parent class then use super.
+
+final class : not able to extend the parent class.
+
+
+								Day 17	18/12 keyword
+
+
+// polymorphisum : many fields.
+*one thing can behave many or multiple type of opration.
+example :
+1.person
+2.customer
+3.patient
+4.employee
+5.student
+	
+there are two types of :
+
+1.compile time polymorphism :(static)
+* method name is same but different parameters.
+
+example : 
+overloding : if a one class have multiple methods having same name but parameters list are different.
+
+rules:
+1.same class.
+2.same method names but, different parameter.
+3.if parameter list are same then, change the datatypes.
+4.if data type also same then, swap the parameters.
+
+imp :
+*we cant achive overloding by removing return type.
+
+2.run time : (dynamic)
+*if a child class there is one method but same method is declared in the parent class it is known as.
+*method name is  same but also the parameter name also same.
+*we overload main method.
+*It change the implementation of parent class.
+
+example : overring(inheritance) 
+
+rules:
+1.inherited different class.
+2.parameter list same 
+3.sequance also same.
+4.datatype also same.
+
+imp : implemation of inharitance.
+imp : topic of access modifier.
+
+								Day 18	19/12 keyword
+//abstraction class :
+	it hides the internal details and showing only essensial details only.
+*it may or may not include abstract methods. abstract classes cannot be instantiated, but then can not be subclass.
+
+example : 
+1.bank
+
+two ways to achive abstraction: 
+1.by interface. 100% abstraction 
+2.by abstraction class : 1 to 100 partially abstraction
+
+Difference b/w and interface vs abstract class 
+	interface				abstract class 
+1.provide 100% abstraction			*provide 0 to 100% partially abstraction.
+
+2.it contain only abstracts methods,		*it contains abstract methods and non-	                 
+  not method body.				  abstract with method body
+
+3.by default all methods are public+abstract	*we write the abstract keyword before the 						
+						method declare
+4 int x=10					*static int x=10
+
+5.we can achive multiple inheritance		*it is not possible to achive multiple 
+						inheritance
+6.	"implement"				*		"extends"
+
+
+								Day 19	20/12 
+// encapsulation : 
+
+wrapping field and method together into a single unit.
+
+example : capsule : where hiding the data.
+
+rules :
+1.variable private.color.
+2. setter and getter methods :  we are going to read and write data.
+
+//setter method : write only class. 
+//getter method : read only class.
+
+
+// Inharitance : has a relationship.
+
+//how many ways to build relationship bet two classes
+
+1.IS-A RELATIONSHIP.
+2.HAS-A RELATIONSHIP.
+
+2.
+//inheritance : override the specific data from super class. using create object. 
+
+*relationship bet two obj.
+*has a relationship. parent and child relationship.
+*child class access only the required properties and behavior or state from the parent class as well as current class.
+
+*Non-blood relationship.
+
+note:
+
+Parent=Child class
+Base=derived class
+Super=sub class
+
+//advantage:
+* for code reusability.
+* loosly coupled.
+* no depandance. 
+
+//dis
+*
+
+//Association :
+1.composition : is-a relationship. why?
+	strong bounding.
+
+2.aggragation : has-a relationship.
+	week bounding.
+
+
+								Day 20	23/12 
+//exception handling.
+	exception is any unexepted event or unwanted evant, during the exuation of the pgm.(normal flow of distube)
+
+//hairarchi of exception handling.
+
+two class:object->throwable.
+
+there is two types :
+
+1.execption (unexception pgm) : program lavel
+*we can handle error.
+there is two types of exception 
+	1.compaile time exception.
+		*checked exception. types of Exception
+			*IOException
+			*SQLException.
+			*ClassNotFoundException
+	2.run time exception.
+		*checked exception. types of Exception
+			*ArithmeticException
+			*NullPointerException.
+			*IndexOutOfBoundException
+				1.ArrayIndexOutOfBoundException
+				2.StringIndexOutOfBoundException
+
+2.Error: system level : we can't handle error.
+*runtime error. types of error
+*VirtualMachine error.
+*OutOfMemory error.
+*stackOverflow error..
+
+
+
+
+
+								Day 21	24/12 
+//multiple try and catch block.
+
+		String name ="aniket";
+		
+		try : we are going to write risky code{
+			System.out.println(name.length());
+		} 
+		catch : going to handle error (Exception e) {
+			System.out.println("hiii students");
+
+
+		}
+		
+		System.out.println("mumbai is my dream city!");
+
+
+
+								Day 22	26/12 		
+try : we are going to write risky code{
+	System.out.println(name.length());
+
+
+} 
+catch : going to handle error (Exception e) {
+
+	System.out.println("hiii students");
+	System.out.println("error occur getMessage: "+e.getMessage());
+	System.out.println("error occur toString: "+e.toString());
+	e.printStackTrace();
+}
+		
+System.out.println("mumbai is my dream city!");
+
+
+*) e : contain class name and message.
+
+//methods to print exception:
+
+1)printStackTrace() : contain class name, info , line number.
+2)toString() : contain exception class name and info.
+3)getMessage() : contain only info.
+
+
+//finally Block : finaly block always executes wether  exception is handle or not.
+
+advantage :
+*
+
+
+								Day 23	27/12 
+
+//throw : custome exception create /
+	  user define Exception.
+*single exception only single exception.
+*throw keyword follow instance.
+*throw write inside the method or block.
+
+
+//throws : indication by the called methods.
+*provide hints by the caller methods.
+*throws multiple exception.
+*throw follow by the class.
+*throws keyword is used method signature or outside of the method.
+
+
+ 
+								Day 24	30/12 
+
+//Multi-threading : it is sub-process and also thread lightweight sub-process. known as multi-threading.
+
+//multi-tasking having two types :
+1.process based multi-tasking.
+difference:
+*heavy weight
+*different memory.
+
+2.thread based  multi-tasking.
+*light weighted	
+*shared memorya
+
+1.how to create thread?
+>by using interface and class 
+
+there are two ways to create threads
+1.create by class by using extends keyword.
+2.creat by interface using implement keyword.
+
+
+
+
+*note : original theory and actual theory is different.
+
+//life cycle of thread :
+1.New -> 2.Runnable -> 3.Running -> 4.terminat
+
+
+								Day 25	31/12 
+//class sample extends Thread implements runnable.
+
+//Thread priority.
+
+1.MIN_PRIORITY-1
+2.NORM_PRIORITY-5
+3.MAX_PRIORITY-10
+
+if priority is same like 5 and 5 then jvm will decide that which thread going to execute first.
+
+class thread{
+public final void setpriority(int num);
+
+public final int getpriority();
+
+}
+
+
+//get priority : System.out.println(Thread.currentThread().getPriority());
+
+//set priority : Thread.currentThread().setPriority(10);
+								Day 26	01/1 
+
+//prevent thread :
+
+1.sleep(): pause for specific amount of time.
+
+class Thread(){
+public static void sleep(int mill) ItrupptedExxce
+public static void sleep(int mill,int nano) ItrupptedExxce
+
+2.yield(): request based exucution.
+3.join() : sequance based excecution.
+
+								Day 27	02/1 
+
+//synchronization : use is to overcome the problem of multithreading.
+
+//if the multiple thread access the any resourse at same time. its provides multithreading wrong result. 
+	
+//is a technique through which we can control multiple thread or among the no of thread only one thread will enter inside the synchronized area.
+
+note - the main purpose of synchronized is the overcome the problem of multiple thread. when multiple thread are tryaing to access same resource at same time on that situation it may provides same wrong result.
+
+
+
+
+								Day 28	03/1 
+//array vr array colloction 
+
+//colloction framework : it is a single entity which we can store multiple type of data. multiple type of object.
+*its colloction of interface and classes, they provide librarya.
+
+//data structure : is the way which store the data by efficient way.
+
+1.time complexity:
+2.space complexity:
+
+//two types of data stracture :
+
+1.premitive data structure: we can store single element in a single entity.
+int 
+char
+float
+short
+boolean
+long
+double
+byte
+
+2.premitive data structure: we can store multiple element in a single entity.
+array
+string 
+
+data structure topic :
+1.searching
+2.sorting
+3.linkedlist
+
+non leanear : 
+4.tree
+5.graph
+
+
+//Array : 
+
+*array is a collection of similer type of data element.(homogenius type of data)
+int a=[64,66,61,31]
+
+
+*we can create the array primitive as well as non pramitive.
+
+*it has fixed sized. we cant incresed or decresed at run time.
+
+*logic.
+
+//collection :
+*collection is a single entity where we can store differ type of data element.
+ex : {45,"aniket,'t',45}
+
+*we can create the collection non pramitive data(object type of data)
+
+*Autoresizing.
+
+*pre define methods
+
+1.collection framework
+
+2.map framework
+
+//collection herarchi 
+
+
+
+
+
+								Day 29	06/1 
+//coursor :
+
+//ArrayList() : arraylist is a class which is implemented by list interface.
+		* it comes under JDK 1.2
+
+//ds
+
+autoresizing.
+
+
+methods :
+
+1.get()
+2.size()
+3.contains()
+4.isEmpty()
+5.clear()
+
+important :
+
+1-it is index based data structure.
+2-we can store hetrogenious type of data.
+3-its follows insertion order.
+4-its do not follows sorting order.
+5-we can store duplicates element.
+6-it stores duplicate null values
+7.non-synchronized.
+
+ 								Day 30	08/1 
+
+//Linked list : linked list is a implemented class of list interface.
+		*it is required to import java.util.*
+
+it comes under JDK 1.2
+
+*Data Structure
+	'Doubly Linkedlist
+
+
+*important points of linkedlist.
+
+1.it is not index based data structure.
+2.its contains hetrogenius types od data.
+3-its follows insertion order.
+4-its do not follows sorting order.
+5-we can store duplicates element.
+6-it stores multiple duplicate null values
+7.non-synchronized.-fast.
+
+
+difference :
+
+Linked list : 
+
+1- DS - Doubly linkedlist list.
+2- no-shifting occurs.
+3- for insertion and deletion is good.
+4- searching is worst.
+
+Array List :
+
+1- DS-resizable Array.
+2.Lots of shifting occure.
+3.for insertion and deletion is worst.
+4.searching is good.
+
+jdk 1.0 : it comes before collection frame work.
+
+	*this class was introduce in JDK 1.0 after re-modification they set into the collection.
+
+1.vector 
+2.stack
+3.hashtable
+4.properties
+5.dictionary
+
+all legacy classes are synchronized.
+
+Iterator - iterator is interface.
+	*which we can display the collection object one by one .iterator().
+
+
+
+ 								Day 31	9/1 
+//Legacy class : 
+
+JDK : 
+in this year version java provides some classes.
+which we can stores the collection object.
+before the collection framework developer stores multiple objects.
+ 
+
+
+//vector :
+
+*vector is a legacy class which implements list interface.
+*which is introduce in jdk 1.0 version.
+*present in java.util package.
+
+DS :
+
+same like resizable array (resizable array)
+
+//important points of vector class :
+
+1.its index based ds.
+2.it follows insertion order.
+3.it does not follows sorting order.
+4.it allow multiple duplicate values.
+5.it also allow duplicate null values.
+6.we can store heterogenous type of object.
+7.all methos are synchronized - slow but data safe.
+
+
+
+	

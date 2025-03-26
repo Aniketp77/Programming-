@@ -1,0 +1,20 @@
+//java practice
+
+//Pattern : 
+*solid pattern
+*holo pattern
+*right angle trangle
+*reverse right angle trangle
+
+
+								Day 16	24/12 
+//
+//string str="cr1a2vita remove number from string "cravita"
+//String str2"for@t*u#ne!c)lo^ud%$& remove.
+
+
+								Day 17	26/12 
+
+								Day 18	27/12 
+
+								Day 19	28/12 

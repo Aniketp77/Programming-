@@ -1,0 +1,20 @@
+package day8;
+
+public class reversepyramid {
+
+	public static void main(String[] args) {
+
+		int r,s,c;
+		for(r=1;r<=4;r++) {
+			for(s=1;s<=r;s++) {
+				System.out.print(" ");
+			}
+			for(c=4;c>r;c--) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
